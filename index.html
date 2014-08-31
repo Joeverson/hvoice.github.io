@@ -1,173 +1,92 @@
 <!doctype html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>HVoiceJS</title>
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
-        <link rel="stylesheet" href="css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="css/style.css"/>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    </head>
-    <body>
-        <div id="logo">HVoiceJS</div>
-        <nav class="navbar navbar-default bar" role="navigation">
-            <div class="container">
-                <ul class="nav navbar-nav">
-                    <li id="home">Home</li>
-                    <li id="conheca">Conheça o HVoiceJS</li>
-                    <li id="documentacao">Documentação</li>
-                    <li>Contato</li>
-                    <li id="demo" class="startVoice">DEMO</li>
-                    <li id="down"><a href="hvoicejs.beta.v0.01.zip">Download</a></li>
-                </ul>
-            </div>
-        </nav>
-        <section class="col-lg-12 content">
-            <div class="container">   <!-- demostração -->
-                <div class="telapreta"></div>
-                <div id="block-content">
-                    <div id="btn-speech"><i class="glyphicon glyphicon-volume-up"></i></div>
-                    <p>Diga "Começar" para iniciar a DEMO <br/>(Clique em permitir para ativar o microphone)</p>
-                </div>
-            </div>
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
 
-            <figure id="slide">
-                <img src="img/img3.jpg" alt="De comandos de voz para seu site e veja ele responder.">
-                <img src="img/img5.jpg" alt="Veja como é simples de te-lo funcionando.">
-                <img src="img/img7.jpg" alt="Multiplas ações por voz no site e simples de instalar e configurar.">
-                <img src="img/img8.jpg" alt="Simples de usar, comodo e interessante.">
-            </figure>
-            <div class="box">
-                <div class="box-content box-content-larg">
-                    <p>O que é e para que serve o HVoiceJS?</p>
-                </div>
-            </div>
-            <div class="box">
-                <p id="documentacao">Documentação</p>
-                <div class="box-content">
-                    <p>Instatação</p>
-                    <p>
-                        Veja como é facil e simples a instalação do HVoiceJS em alguns passos e aplicação esta pronta para ser usada!
-                    </p>
-                    <ul>
-                        <li>Faça download.</li>
-                        <li>Descompacte o HVoice.v1.js.rar no diretorio raiz da sua aplicação.</li>
-                        <li>Na sua pagina raiz (index.php ou .html) coloque o link chamando os arquivos externos hvoice.js e terms.js que estão dentro da pasta descompactada</li>
-                        <li>No seu site coloque a clase reservado do HVoiceJS "<span style="color:blue">.startVoice</span>"</li>
-                        <li>Entre no index.php na pasta que foi descompactada, para acessar o menu de administração do plugin.</li>
-                        <li>Agora é só configurar e pronto! </li>
-                    </ul>
-                </div>
-                <div class="box-content">
-                    <p>Regras de Bom Funcionamento</p>
-                    <p>
-                        para que o sistema funcione de forma melhor e fique atento a algumas considerações na hora de definir quais termos vão ser
-                        utilizados para determinadas ações do site.
-                    </p>
-                    <ul>
-                        <li>Não coloque termos complicados de serem prenunciados (pense na dicção dos usuários).</li>
-                        <li>Defina os termos de acordo com as ações que seram aplicadas (termos bem objetivos).</li>
-                        <li>Por perferência não coloque os termos com uma palavra só, tente colocar termos com mais de uma palavra para ter menos risco de conflito.</li>
-                        <li>Informa aos usuários quais ois termos que eles podem usar no site (um mini tour).</li>
-                        <li>Por padrão os termos devem ser feitos em português, mas nas próximas versões seram disponiveis varias linguas.</li>
-                    </ul>
-                </div>
+  <title>Hvoice.github.io</title>
+  <meta name="description" content="Página do HVoiceJS para apresentação do plugin">
 
-                <div class=" box-content box-content-larg">
-                    <p>Configurações</p>
-                    <p>
-                        As configurações no HVoiceJS são bem simples, você nunca imaginou uma coisa tão simples de
-                        configurar e de se instalar. A configuração do HVoiceJS ADM possue dois modos, o básico e o avançado.
-                         Conheça agora!
-                    </p>
-                    <ul>
-                        <li>
-                            <p>Modo Básico</p>
-                            <p>
-                                No modo básico qual quer pessoa sem conhecimentos em programação
-                                pode configurar o HVoiceJS, é bem simples e intuitivo. Para adicionar
-                                uma nova ação ao site basta clicar na ação que deseje que o site faça
-                                e em seguida informe o termo que servirá para o sistema ser ativado e por final
-                                clique em salvar.
-                            </p>
-                        </li>
-                        <li>
-                            <p>Modo Avançado</p>
-                            <p>
-                                Este modo é para usuarios mais experientes em programação com javascript/jQuery.
-                                mas não é tão complicado como parece. primeiro informe o termo que servirá de "gatilho"
-                                e depois informe uma descrição minima sobre o termo e o que ele é responsável, em seguida
-                                escreva uma função em javascript/jQuery que será execultada quando o termo for chamado no site, e por
-                                fim salve.
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+</head>
 
-            <footer>
-                <div id="copyright">Desenvolvido por Joerverson Santos</div>
-            </footer>
-        </section>
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Hvoice.github.io</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">Página do HVoiceJS para apresentação do plugin</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/Joeverson/hvoice.github.io/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/Joeverson/hvoice.github.io/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/Joeverson/hvoice.github.io" class="code">View Hvoice.github.io on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h3>
+<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages
+</code></pre>
+
+<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+
+<h3>
+<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+
+<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+
+<h3>
+<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+
+<h3>
+<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<h3>
+<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/Joeverson" class="avatar"><img src="https://avatars2.githubusercontent.com/u/7293460?v=2&amp;s=60" width="48" height="48"></a> <a href="https://github.com/Joeverson">Joeverson</a> maintains <a href="https://github.com/Joeverson/hvoice.github.io">Hvoice.github.io</a></p>
 
 
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/Joeverson/hvoice.github.io/tarball/master" class="tar">tar</a><a href="https://github.com/Joeverson/hvoice.github.io/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
 
-        <script src="http://akde.xp3.biz/js/jQuery.js"></script>
-        <script src="js/jquery.slides.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="HVoiceJS/terms.js"></script>
-        <script src="HVoiceJS/HVoice.js"></script>
-        <script>
-            $(document).ready(function(){
-                $("#slide img:eq(0)").addClass("ativo").show();
-
-                var texto = $(".ativo").attr("alt");
-                $("#slide").prepend("<p>"+texto+"</p>");
-
-                setInterval(slide,4000);
-
-                function slide(){
-                    if($(".ativo").next().size()){
-                        var a = Math.floor(Math.random()*4);
-                        $(".ativo").slideUp().removeClass("ativo");
-                        $("#slide img:eq("+a+")").fadeIn().addClass("ativo");
-                    }else{
-                        $(".ativo").fadeOut().removeClass("ativo");
-                        $("#slide img:eq(0)").fadeIn().addClass("ativo");
-                    }
-                    var texto = $(".ativo").attr("alt");
-                    $("#slide p").hide().html(texto).delay(500).fadeIn();
-                }
-
-
-                $("#documentacao").on("click",function(){
-                    window.scrollTo(0,1094);
-                });
-
-                $("#conheca").on("click",function(){
-                    window.scrollTo(0,430);
-                });
-
-                $("#home").on("click",function(){
-                    window.scrollTo(0,0);
-                });
-
-                $( document ).scroll(function() {
-                    if($("body").scrollTop() >= 430){
-                        $("nav").css({position:"fixed", margin: "0% 0% 0% 0%", zIndex:"30",width:'100%'});
-                    }else{
-                        $("nav").css({position:"relative", margin: "10% 5% 0% 5%", zIndex:"30", width:'90%'});
-                    }
-                    console.log($("body").scrollTop());
-                });
-
-                $("#demo, .telapreta").on("click",function(){
-                   $("#block-content").fadeToggle();
-                   $(".telapreta").fadeToggle();
-                });
-
-            })
-        </script>
-    </body>
+  
+</body>
 </html>
